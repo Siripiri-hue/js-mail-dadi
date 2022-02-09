@@ -1,3 +1,4 @@
+// EMAIL
 // dichiaro e inizializzo l'array
 const emails = [
     "sarah.p@email.it",
@@ -26,3 +27,21 @@ if (response)
     alert("trovata!");
 else 
     alert("non sei iscritto");
+
+
+// GIOCO DEI DADI
+// variabili con i numeri di utente e pc
+let userNumber = Math.floor(Math.random() * 6 + 1);
+let pcNumber = Math.floor(Math.random() * 6 + 1);
+
+console.log(`Il tuo numero è ${userNumber}, quello del PC è ${pcNumber}`);
+
+if (userNumber > pcNumber)
+    console.log(`Hai vinto!`);
+else if (userNumber < pcNumber)
+    console.log(`Hai perso!`);
+else 
+    console.log(`Pareggio!`);
+
+
+
