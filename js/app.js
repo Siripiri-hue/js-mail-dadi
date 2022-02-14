@@ -14,12 +14,12 @@ const emails = [
 let userEmail = prompt(`ciao, inserisci la tua email`);
 
 //controllo se l'email inserita è presente
-let response = "";
+let response = false;
 
 for (let i=0; i < emails.length; i++)
 {
     if (emails[i] === userEmail)
-        response = emails[i];
+        response = true;
 }
 
 //comunico il responso
